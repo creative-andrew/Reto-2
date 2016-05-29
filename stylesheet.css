@@ -1,0 +1,323 @@
+
+@import url(https://fonts.googleapis.com/css?family=Megrim|Monoton|Ribeye+Marrow);
+
+html, body {
+    height:100%;
+    width:100%;
+    margin:0;
+    padding:0;
+    overflow: hidden;
+}
+
+.logo {
+	height: 74px;
+	padding-left: 10px;
+}
+/* Cambie sction por #main para que la imagen no se 
+repitiera en todas las secciones*/
+#main {
+background-image: url("tumblr_mngppzG5MX1r9wqk4o3_1280.png"); 
+background-repeat: no-repeat;
+background-size: cover;
+width: 100%;
+min-height: 100vh;
+background-position: center;
+display: flex;
+justify-content: center;
+align-items: center;
+background-attachment: fixed;
+}
+
+
+a  {
+	text-decoration: none;
+ color: red
+}
+
+.navbar {
+    min-height: 100px;
+   	border: none;
+}
+.navbar-nav {
+    float: right;
+    margin: 0;
+    padding-top: 29px;
+}
+
+.navbar-default {
+	background-color: rgba(0, 0, 0, 0.3);
+	}
+
+.navbar-default .navbar-nav>.active>a
+	{
+	background-color: transparent;
+	color: white;
+	}
+
+
+
+.navbar-default .navbar-nav>.active>a:hover {
+    color: white;
+    background-color: transparent !important;
+    font-size: 1.7em !important;
+}
+
+.navbar-default .navbar-nav>.active>a.cool-link>.::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2.5px;
+    background: #286090;
+    transition: width .3s;
+}
+
+.navbar-default .navbar-nav>.active>.cool-link:hover::after {
+    color: white;
+    width: 100%;
+    transition: width .3s;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus  {
+    background-color: transparent;
+    color: white;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #CBCCCE;
+    font-size: 1.6em;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+    color: white;
+    background-color: transparent !important;
+    font-size: 1.7em !important;
+    transition: width 1s;
+}
+
+.navbar-default .navbar-nav>li>a.cool-link::after {
+	content: '';
+    display: block;
+    width: 0;
+    height: 2.5px;
+    background: #286090;
+    transition: width .3s;
+}
+
+.navbar-default .navbar-nav>li>a.cool-link:hover::after {
+    color: white;
+    width: 100%;
+    transition: width .3s;
+}
+
+
+@media only screen and (max-width: 780px) {
+    .logo {
+        height: 50px;
+    }
+
+    .navbar {
+    min-height: 80px;
+   	border: none;
+   	}
+   	
+
+
+
+   	.navbar-default .navbar-nav>li>a {
+    font-size: 1em;
+	}
+
+	.navbar-default .navbar-nav>li>a:hover {  
+    font-size: 1.1em !important;
+	}	
+
+	.navbar-default .navbar-nav>.active>a:hover {
+    font-size: 1.1em !important;
+	}
+
+}
+
+
+.navbar-collapse { 
+box-shadow: none !important;
+border:none !important;
+}
+
+.navbar-default .navbar-collapse {
+border: none !important;
+}
+
+.jumbotron  {
+margin: auto;
+padding-top: 0;
+background: none;
+text-align: center;
+}
+
+.heading1 {
+background-color: rgba(0, 0, 0, 0.3);
+display: inline-block;
+padding: 30px 30px 30px 30px;
+color: white;
+}
+
+.glyphicon {
+color: red;
+}
+
+.jumbotron p {
+    color: #DEDEDE !important;
+    font-size: 1em;
+}
+
+.btn-group-lg>.btn, .btn-lg {
+    margin-top: 25px;
+    margin-left: 25px !important;
+}
+
+.navbar-default .navbar-nav>li>a:focus{
+    color: #2D74B1;
+}
+
+
+
+
+@media only screen and (max-width: 780px) {
+	.navbar {
+		background-color: black;
+	}
+
+	.jumbotron  {
+	padding-top: 0;
+	
+	
+	}
+}
+
+
+
+ /* .navbar-default .navbar-collapse {
+    border: none !important;
+    position: fixed;
+    width: 100%;
+}*/
+
+
+/*CSS para seccion Portafolio*/
+
+#portafolio{
+background-color: white;
+/*background-image: url("http://rahearquitectos.com/wp-content/uploads/2014/12/black_background_wood-wallpaper-1366x768-e1449161033114.jpg"); 
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+*/
+width: 100%;
+min-height: 100vh;
+padding:4em 0em 3em;
+background-attachment: fixed, local;
+}
+
+.h2porta {
+  display: inline;
+  color: black;
+  font-size:3em;
+  margin:0em 5% 0em;
+ text-transform: uppercase;
+ font-size: 2.5em;
+ }
+.bajotitulo {
+   margin:2% 7% 0%;
+}
+#otro {
+  padding:.5em .5em 1em;
+}
+
+/*EFECTO HOVER DE IMAGANES*/
+
+#rig {
+padding: 0;
+  }
+
+#rig li {
+    display: inline-block;
+    box-sizing:border-box;
+}
+        
+.rig-cell {
+
+    display:block;
+    position: relative;
+    overflow:hidden;
+}
+        
+.rig-img {
+    transform:scale(1);
+    transition:all 1s;
+}
+
+#rig li:hover .rig-img {
+    transform:scale(1.05);
+}
+        
+.rig-overlay {
+    position: absolute;
+    display:block;
+    top: 0;
+    left: 0;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.6) no-repeat center 20%;
+    opacity:0;
+    filter:alpha(opacity=0);/*For IE6 - IE8*/
+    transition:all 0.6s;
+    height: 0;
+    width: 100%;
+}
+#rig li:hover .rig-overlay {
+    opacity:0.8;
+    height: 100%;
+}
+
+.rig-text {
+    display:block;
+    padding:0 30px;
+    box-sizing:border-box;
+    position:absolute;
+    left:0;
+    width:100%;
+    text-align:center;
+    text-transform:capitalize;
+    font-size:18px;
+    font-weight:bold;
+    font-family: 'Oswald', sans-serif;
+    font-weight:normal!important;
+    top:45%;
+    color:white;
+    opacity:0;
+    filter:alpha(opacity=0);/*For older IE*/
+    transform:translateY(-20px);
+    transition:all .3s;
+}
+#rig li:hover .rig-text {
+    transform:translateY(0px);
+    opacity:0.9;
+}
+
+.large-header {
+    background: transparent;
+}
+
+
+.jumbotron p {
+    top: 70%;
+}
+
+.jumbotron h1 {
+    color: white;
+    padding: 25px;
+    border: 8px double #f9f1e9;
+    font-family: Londrina Outline, sans-serif;
+}
+
+
+/*FIN DE HOVER*/
